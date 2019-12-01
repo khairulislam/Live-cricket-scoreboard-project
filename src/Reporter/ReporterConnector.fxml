@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Reporter.ReporterController">
+   <children>
+      <ImageView fitHeight="300.0" fitWidth="450.0" layoutX="-31.0" layoutY="-29.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@cricket-bat-and-ball.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="match" layoutX="156.0" layoutY="36.0" prefHeight="34.0" prefWidth="237.0" />
+      <Button layoutX="180.0" layoutY="256.0" mnemonicParsing="false" onAction="#connect" text="Connect" textFill="#0f0cc9">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="53.0" layoutY="40.0" text="Match" textFill="#e15109">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Label layoutX="38.0" layoutY="171.0" text="Password" textFill="#e15109">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="156.0" layoutY="169.0" prefHeight="25.0" prefWidth="237.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <Label fx:id="warning" layoutX="107.0" layoutY="210.0" prefHeight="27.0" prefWidth="237.0" textFill="#e15109">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="6.0" layoutY="125.0" prefHeight="27.0" prefWidth="147.0" text="Reporter's Name" textFill="#e15109">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="reporterName" layoutX="156.0" layoutY="121.0" prefHeight="34.0" prefWidth="237.0" />
+      <TextField fx:id="date" layoutX="156.0" layoutY="78.0" prefHeight="34.0" prefWidth="237.0" />
+      <Label layoutX="58.0" layoutY="82.0" text="Date" textFill="#e15109">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

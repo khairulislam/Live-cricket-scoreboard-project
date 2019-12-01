@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.ReceiverController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="700.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@cricket.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="53.0" layoutY="34.0" prefHeight="20.0" prefWidth="65.0" text="MatchList" textAlignment="CENTER" textFill="#180cfc" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="586.0" layoutY="547.0" mnemonicParsing="false" onAction="#disconnect" text="Disconnect" textFill="#1b08f2">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <ListView fx:id="matchList" layoutX="24.0" layoutY="62.0" opacity="0.8" prefHeight="272.0" prefWidth="155.0" />
+      <Label layoutX="403.0" layoutY="21.0" text="Description" textFill="#2e04ea">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="260.0" layoutY="355.0" mnemonicParsing="false" onAction="#showMatchDetails" text="Show" textFill="#1b08f2">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="description" layoutX="403.0" layoutY="62.0" opacity="0.8" prefHeight="457.0" prefWidth="275.0" />
+      <Label layoutX="210.0" layoutY="34.0" prefHeight="20.0" prefWidth="127.0" text="SelectedMatchList" textAlignment="CENTER" textFill="#180cfc" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ListView fx:id="selectedMatchList" layoutX="210.0" layoutY="64.0" opacity="0.8" prefHeight="272.0" prefWidth="155.0" />
+      <Button layoutX="60.0" layoutY="355.0" mnemonicParsing="false" onAction="#selection" text="Subscribe" textFill="#1b08f2">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="700.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@cricket.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="53.0" layoutY="34.0" prefHeight="20.0" prefWidth="65.0" text="MatchList" textAlignment="CENTER" textFill="#180cfc" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="524.0" layoutY="296.0" text="4th Innings" textFill="#2e04ea">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="514.0" layoutY="115.0" text="2nd Innings" textFill="#2e04ea">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="507.0" text="Result" textFill="#2e04ea">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="matchName" layoutX="254.0" layoutY="22.0" opacity="0.7" prefHeight="25.0" prefWidth="177.0" />
+      <TextField fx:id="venue" layoutX="253.0" layoutY="49.0" opacity="0.7" prefHeight="25.0" prefWidth="177.0" />
+      <TextField fx:id="startTime" layoutX="524.0" layoutY="52.0" opacity="0.7" prefHeight="25.0" prefWidth="170.0" />
+      <TextField fx:id="matchType" layoutX="524.0" layoutY="22.0" opacity="0.7" prefHeight="25.0" prefWidth="170.0" />
+      <TextField layoutX="254.0" layoutY="78.0" opacity="0.7" prefHeight="25.0" prefWidth="296.0" />
+      <TextArea fx:id="innings1st" layoutX="229.0" layoutY="142.0" opacity="0.7" prefHeight="148.0" prefWidth="212.0" />
+      <TextArea fx:id="result" layoutX="159.0" layoutY="498.0" opacity="0.7" prefHeight="86.0" prefWidth="339.0" />
+      <TextArea fx:id="innings4th" layoutX="466.0" layoutY="328.0" opacity="0.7" prefHeight="148.0" prefWidth="212.0" />
+      <TextArea fx:id="innings3rd" layoutX="229.0" layoutY="328.0" opacity="0.7" prefHeight="148.0" prefWidth="212.0" />
+      <TextArea fx:id="innings2nd" layoutX="466.0" layoutY="142.0" opacity="0.7" prefHeight="148.0" prefWidth="212.0" />
+      <Button layoutX="586.0" layoutY="547.0" mnemonicParsing="false" onAction="#disconnect" text="Disconnect" textFill="#1b08f2">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <ListView fx:id="matchList" layoutX="24.0" layoutY="62.0" opacity="0.7" prefHeight="272.0" prefWidth="155.0" />
+      <Label layoutX="285.0" layoutY="115.0" text="1st Innings" textFill="#2e04ea">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="282.0" layoutY="296.0" text="3rd Innings" textFill="#2e04ea">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="441.0" layoutY="54.0" prefHeight="20.0" prefWidth="74.0" text="StartTime" textAlignment="CENTER" textFill="#180cfc" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="437.0" layoutY="25.0" prefHeight="20.0" prefWidth="74.0" text="MatchType" textAlignment="CENTER" textFill="#180cfc" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="159.0" layoutY="24.0" prefHeight="20.0" prefWidth="89.0" text="MatchName" textAlignment="CENTER" textFill="#180cfc" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="192.0" layoutY="52.0" prefHeight="20.0" prefWidth="45.0" text="Venue" textAlignment="CENTER" textFill="#180cfc" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="202.0" layoutY="81.0" prefHeight="20.0" prefWidth="45.0" text="Toss" textAlignment="CENTER" textFill="#180cfc" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="74.0" layoutY="349.0" mnemonicParsing="false" onAction="#showMatchDetails" text="Show" textFill="#1b08f2">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
